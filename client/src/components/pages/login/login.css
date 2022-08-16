@@ -1,0 +1,193 @@
+.loginBody {
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  /* background-color: rgba(0, 0, 0, 0.781); */
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 90vh;
+}
+
+.login {
+  background-color: transparent;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+.loginWrapper {
+width: 374.78px !important;
+height: auto;
+}
+
+.loginWrapper img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  object-fit: cover;
+}
+
+.loginTitle {
+font-size: 64px;
+text-align: center;
+font-family: "Josefin Sans", sans-serif;
+font-weight: 400;
+letter-spacing: 0.3rem;
+}
+
+.txtTitle {
+font-size: 34px;
+text-align: center;
+margin-top: 20px;
+font-family: "Josefin Sans", sans-serif;
+font-weight: 300;
+letter-spacing: 0.3rem;
+}
+
+
+.loginForm {
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.loginInput {
+display: flex;
+align-items: flex-end;
+padding: 10px;
+}
+
+.loginCheckbox {
+width: 10px;
+}
+
+#input-with-sx {
+width: 500px; 
+}
+
+/* .loginForm > input {
+margin: 10px 0;
+font-family: "Josefin Sans", sans-serif;
+font-weight: 400;
+letter-spacing: 0.2rem;
+font-size: 18px;
+padding: 1rem;
+}
+
+.loginInput {
+padding: 10px;
+background-color: white;
+border: none;
+border-radius: 10px;
+font-size: 18px;
+margin-left: 0.5rem;
+} */
+
+
+
+.loginRmb {
+display: flex;
+padding: 10px 0;
+width: 50%;
+margin-left: 7px;
+}
+
+.loginRmb p {
+margin-left: 3px;
+margin-top: 7px;
+font-family: "Josefin Sans", sans-serif;
+font-weight: 300;
+}
+
+
+.loginButton {
+display: flex;
+position: absolute;
+left: 10%;
+right:10%;
+width: 80%;
+background-color: #000000;
+opacity: 80%;
+}
+
+.googleLoginButton{
+background-color: #4285F4;
+display: flex;
+position: absolute;
+left: 10%;
+right:10%;
+width: 80%;
+opacity: 80%;
+}
+
+.facebookLoginButton{
+background-color: #4867AA;
+display: flex;
+position: absolute;
+left: 10%;
+right:10%;
+width: 80%;
+opacity: 80%;
+}
+
+
+
+.txt {
+text-align: center;
+padding: 4px;
+font-family: "Josefin Sans", sans-serif;
+font-weight: 300;
+letter-spacing: 0.2rem;
+}
+
+.toRegister {
+display: flex;
+margin: 10px 0px 0px 12px;
+font-family: "Josefin Sans", sans-serif;
+font-weight: 300;
+justify-content:left;
+
+}
+
+.toRegister p {
+border-bottom: 1px solid #000;
+margin-left: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+
+#input-with-sx {
+  width: 200px; 
+}
+.loginForm {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  }
+  .loginWrapper{
+    width: 100%;
+  }
+  .loginButton {
+    display: flex;
+    position: inherit !important;
+    left: 10%;
+    right: 10%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 80%;
+}
+}

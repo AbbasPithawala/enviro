@@ -1,0 +1,111 @@
+.registerBody {
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.781); */
+  }
+  
+  .register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .registerWrapper {
+    width: 374.78px !important;
+    height: auto;
+  }
+  
+  .registerWrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    object-fit: cover;
+  }
+  
+  .registerTitle {
+    font-size: 64px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+  }
+  
+  .registerForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* .registerForm > input {
+      margin: 10px 0;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.2rem;
+      font-size: 18px;
+      padding: 1rem;
+  } */
+  
+  .registerInput {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+  }
+  
+  .registerRmb input {
+    width: 10px;
+    border: 1px solid black;
+  }
+  
+  .registerRmb input:focus {
+    width: 10px;
+  }
+  
+  .registerBtn {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .registerRmb {
+    display: flex;
+    padding: 10px 0;
+    margin-left: 7px;
+  }
+  
+  .tc {
+    font-size: 8px;
+    width: 100%;
+    margin-top: 2px;
+    margin-right: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .txt {
+    text-align: center;
+    padding: 4px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 6px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .registerWrapper {
+      width: 100%;
+    }
+  }
+  

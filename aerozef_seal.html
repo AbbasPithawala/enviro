@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerozef Creations Private Limited - Corporate Seal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .paper {
+            background: #fefefe;
+            padding: 60px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: relative;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .paper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(0,0,0,0.02) 1px, transparent 1px),
+                radial-gradient(circle at 80% 20%, rgba(0,0,0,0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+        }
+        
+        .seal-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 0;
+        }
+        
+        .seal {
+            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+        }
+        
+        .document-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .document-content {
+            color: #555;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="paper">
+        <div class="document-title">AEROZEF CREATIONS PRIVATE LIMITED</div>
+        
+        <div class="document-content">
+            <p>This document serves as an official corporate seal for Aerozef Creations Private Limited, incorporated on November 25, 2017.</p>
+            
+            <p>The corporate seal below represents the official authorization and authenticity of this document and any associated business transactions.</p>
+        </div>
+        
+        <div class="seal-container">
+            <svg class="seal" width="300" height="300" viewBox="0 0 300 300">
+                <!-- Outer ring with double lines -->
+                <circle cx="150" cy="150" r="140" fill="none" stroke="#1a365d" stroke-width="3"/>
+                <circle cx="150" cy="150" r="135" fill="none" stroke="#1a365d" stroke-width="1"/>
+                
+                <!-- Inner ring -->
+                <circle cx="150" cy="150" r="100" fill="none" stroke="#1a365d" stroke-width="2"/>
+                
+                <!-- Outer ring text - Company name -->
+                <path id="outerTop" d="M 50 150 A 100 100 0 0 1 250 150" fill="none"/>
+                <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1a365d" text-anchor="middle">
+                    <textPath href="#outerTop" startOffset="50%">
+                        AEROZEF CREATIONS PRIVATE LIMITED
+                    </textPath>
+                </text>
+                
+                <!-- Outer ring text - Date -->
+                <path id="outerBottom" d="M 250 150 A 100 100 0 0 1 50 150" fill="none"/>
+                <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1a365d" text-anchor="middle">
+                    <textPath href="#outerBottom" startOffset="50%">
+                        NOVEMBER 25, 2017
+                    </textPath>
+                </text>
+                
+                <!-- Decorative stars -->
+                <g fill="#1a365d">
+                    <polygon points="30,150 32,155 37,155 33,158 35,163 30,160 25,163 27,158 23,155 28,155" />
+                    <polygon points="270,150 272,155 277,155 273,158 275,163 270,160 265,163 267,158 263,155 268,155" />
+                </g>
+                
+                <!-- Inner circle text -->
+                <text x="150" y="130" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1a365d" text-anchor="middle">INCORPORATED</text>
+                <text x="150" y="150" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1a365d" text-anchor="middle">SEAL</text>
+                <text x="150" y="170" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1a365d" text-anchor="middle">AEROZEF</text>
+                
+                <!-- Add some texture to make it look more realistic -->
+                <defs>
+                    <filter id="paperTexture">
+                        <feTurbulence baseFrequency="0.04" numOctaves="4" result="noise"/>
+                        <feColorMatrix in="noise" type="saturate" values="0"/>
+                        <feComponentTransfer>
+                            <feFuncA type="discrete" tableValues="0 .5 .5 .5 .5 .5 .5 .5 .5 .5 .5 .5 .5 .5 .5 .5"/>
+                        </feComponentTransfer>
+                        <feComposite in2="SourceGraphic" operator="in"/>
+                    </filter>
+                    
+                    <radialGradient id="sealGradient" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" style="stop-color:#2c5282;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#1a365d;stop-opacity:1" />
+                    </radialGradient>
+                </defs>
+                
+                <!-- Apply gradient to the seal elements -->
+                <circle cx="150" cy="150" r="140" fill="none" stroke="url(#sealGradient)" stroke-width="3"/>
+                <circle cx="150" cy="150" r="135" fill="none" stroke="url(#sealGradient)" stroke-width="1"/>
+                <circle cx="150" cy="150" r="100" fill="none" stroke="url(#sealGradient)" stroke-width="2"/>
+            </svg>
+        </div>
+        
+        <div class="document-content">
+            <p style="text-align: center; margin-top: 30px; font-style: italic; color: #666;">
+                This seal is affixed in accordance with the corporate bylaws and legal requirements.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
